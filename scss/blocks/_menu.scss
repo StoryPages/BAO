@@ -1,0 +1,35 @@
+.menu {
+	margin-bottom: $bottom;
+}
+.menu__wrapper {
+  padding: $padding-main;
+  border-radius: $radius;
+  background-color: $main;
+}
+.menu__heading {
+  margin-bottom: $bottom;
+  font-size: clamp(3rem, 1.915rem + 5.42vw, 7rem);
+  font-weight: 600;
+  color: $white;
+}
+.menu__wrap-list {
+}
+.menu__list {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+.grid {
+}
+.menu__card {
+}
+.menu__img {
+  width: 100%;
+  border-radius: 1rem 1rem 0 0;
+}
+.menu__wrap-text {
+}
+.menu__title {
+  font-size: clamp(1.6rem, 1.22rem + 1.9vw, 3rem);
+  font-weight: 400;
+  color: $white;
+}

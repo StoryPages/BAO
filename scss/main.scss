@@ -1,0 +1,15 @@
+// Base
+@import './base/fonts';
+@import './base/reset';
+@import './base/vars';
+@import './base/base';
+
+// Blocks
+@import './blocks/_header';
+@import './blocks/hero';
+@import './blocks/about';
+@import './blocks/menu';
+@import './blocks/footer';
+
+// Media
+@import './_media';

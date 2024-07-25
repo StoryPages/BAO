@@ -1,0 +1,85 @@
+.hero {
+  margin-bottom: $bottom;
+  background-color: #999;
+  background-image: linear-gradient(
+      0deg,
+      rgba(22, 21, 23, 1) 0%,
+      rgba(22, 21, 23, 0.2) 100%
+    ),
+    url("../image/bg.jpg");
+  background-position: center 10%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero__wrapper {
+  padding: clamp(3rem, 2.458rem + 2.71vw, 5rem) 0;
+  border-radius: $radius;
+}
+
+.hero__wrap {
+  width: 50%;
+}
+
+.hero__heading {
+  margin-bottom: 2rem;
+  font-size: clamp(2rem, 0.644rem + 6.78vw, 7rem);
+  font-weight: 600;
+  line-height: 130%;
+  color: $white;
+}
+
+.hero__desc {
+  margin-bottom: 2rem;
+  font-size: clamp(1.6rem, 1.22rem + 1.9vw, 3rem);
+  font-weight: 400;
+  color: $white;
+}
+
+.hero__button {
+  position: relative;
+  display: inline-block;
+  padding: 1rem clamp(1.5rem, 1.093rem + 2.03vw, 3rem);
+  font-size: clamp(1.6rem, 1.492rem + 0.54vw, 2rem);
+  font-weight: 400;
+  color: $white;
+  background-color: $yellow;
+  overflow: hidden;
+  border-radius: 2rem;
+  transition: background-color 0.2s ease;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 45%;
+    left: -50%;
+    width: 45%;
+    -webkit-box-shadow: 0px 0px 20px 10px rgba(255, 255, 255, 1);
+    -moz-box-shadow: 0px 0px 20px 10px rgba(255, 255, 255, 1);
+    box-shadow: 0px 0px 20px 10px rgba(255, 255, 255, 1);
+    transform: rotate(45deg);
+    transition: all 2s linear;
+    pointer-events: none;
+    animation-name: diagonal-stripe;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+  }
+
+  &:hover {
+    color: $white;
+    background-color: rgba(246, 195, 36, 0.8);
+  }
+
+  &:hover::before {
+    animation: none;
+  }
+}
+
+@keyframes diagonal-stripe {
+  from {
+    left: -60%;
+  }
+  to {
+    left: 100%;
+  }
+}

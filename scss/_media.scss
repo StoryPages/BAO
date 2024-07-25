@@ -1,0 +1,13 @@
+@media (min-width: 320px) and (max-width: 650px) {
+  .contacts {
+    display: none;
+  }
+
+  .hero__wrap {
+    width: 100%;
+  }
+
+  .menu__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

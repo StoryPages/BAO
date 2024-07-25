@@ -1,0 +1,20 @@
+.about {
+	margin-bottom: $bottom;
+}
+
+.about__wrapper {
+	padding: $padding-main;
+	border-radius: $radius;
+	background-color: $main;
+}
+.about__heading {
+	font-size: clamp(3rem, 1.915rem + 5.42vw, 7rem);
+	font-weight: 600;
+	color: $white;
+}
+
+.about__desc {
+	font-size: clamp(2rem, 1.692rem + 1.23vw, 3rem);
+	font-weight: 400;
+	color: $white;
+}

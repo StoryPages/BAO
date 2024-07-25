@@ -1,0 +1,39 @@
+html {
+	font-size: 62.5%;
+	scroll-padding-top: $header-height;
+	scroll-behavior: smooth;
+}
+
+body {
+	position: relative;
+	margin: 0;
+	font-family: $font-main;
+	background-color: $body;
+}
+
+.container {
+	margin: $container-margin;
+	max-width: $container-width;
+	padding: $container-padding;
+}
+
+.flex {
+	display: flex;
+}
+
+.grid {
+	display: grid;
+}
+
+a {
+	color: $white;
+	transition: color 0.2s ease;
+
+	&:hover {
+		color: $yellow;
+	}
+}
+
+.none {
+	display: none;
+}

@@ -1,0 +1,62 @@
+.header {
+  position: sticky;
+  top: 0;
+  padding: clamp(0.5rem, 0.318rem + 0.91vw, 1rem) 0;
+  background-color: $header;
+  z-index: 99999;
+  -webkit-box-shadow: 0px 10px 8px 0px rgba(22, 21, 23, 0.5);
+  -moz-box-shadow: 0px 10px 8px 0px rgba(22, 21, 23, 0.5);
+  box-shadow: 0px 10px 8px 0px rgba(22, 21, 23, 0.5);
+}
+
+.header__wrapper {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__wrapper-nav {
+  align-items: center;
+  gap: clamp(2rem, 1.729rem + 1.36vw, 3rem);
+}
+
+.header__logo {
+  align-items: center;
+  gap: 0.5rem;
+  font-size: clamp(2rem, 1.729rem + 1.36vw, 3rem);
+  font-weight: 600;
+  color: $yellow;
+}
+
+.logo__img {
+  width: clamp(4rem, 3.729rem + 1.36vw, 5rem);
+  height: clamp(4rem, 3.729rem + 1.36vw, 5rem);
+}
+
+.header__list {
+  align-items: center;
+  gap: clamp(2rem, 1.729rem + 1.36vw, 3rem);
+}
+
+.header__link {
+  font-size: clamp(1.6rem, 1.492rem + 0.54vw, 2rem);
+  font-weight: 400;
+}
+
+.contacts__item {
+  font-size: clamp(1.6rem, 1.492rem + 0.54vw, 2rem);
+}
+
+.message {
+  gap: 1rem;
+}
+
+.message__svg {
+  width: clamp(2rem, 1.458rem + 2.71vw, 4rem);
+  height: clamp(2rem, 1.458rem + 2.71vw, 4rem);
+  fill: $white;
+  transition: fill 0.2s ease;
+
+  &:hover {
+    fill: $yellow;
+  }
+}
